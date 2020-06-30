@@ -1,7 +1,10 @@
 @import "~normalize.css";
 
 @import "_variables";
-@import "modules/hello.scss";
+@import "modules/about.scss";
+@import "modules/skills.scss";
+@import "modules/projects.scss";
+@import "modules/contact.scss";
 
 body {
   background: $wtf;
@@ -10,4 +13,20 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+
+
+
+
+
+.email{
+
+}
+
+
+
+
+
+
+.main {
 }
