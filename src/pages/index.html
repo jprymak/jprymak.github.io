@@ -41,7 +41,9 @@
 
       <section class="skills">
         <h2 class="skills__header">My skills</h2>
+
         <article class="skill-group">
+          <span class="skill-group__icon">💪</span>
           <h3 class="skill-group__header">Working knowledge</h3>
           <ul class="skill-group__list">
             <li class="skill">Semantic HTML 5</li>
@@ -51,6 +53,7 @@
           </ul>
         </article>
         <article class="skill-group">
+          <span class="skill-group__icon">🤔</span>
           <h3 class="skill-group__header">Know something about</h3>
           <ul class="skill-group__list">
             <li class="skill">Semantic HTML 5</li>
@@ -60,6 +63,7 @@
           </ul>
         </article>
         <article class="skill-group">
+          <span class="skill-group__icon">🎓</span>
           <h3 class="skill-group__header">Want to learn</h3>
           <ul class="skill-group__list">
             <li class="skill">Semantic HTML 5</li>
@@ -72,9 +76,11 @@
 
       <section class="projects">
         <h2 class="projects__header">Recent projects</h2>
-        <article class="projects__template projects__template--js">
-
-        </article>
+        <p class="projects__paragraph">
+          I’ve built some projects. Here’s the list of the things I’ve done so
+          far.
+        </p>
+        <article class="projects__template projects__template--js"></article>
       </section>
 
       <section class="contact">
@@ -82,9 +88,15 @@
         <p class="contact__paragraph">
           I’m open for new opportunities. If you have one for me we should talk!
         </p>
-        <a class="contact__icon"></a>
-        <a class="contact__icon"></a>
-        <a class="contact__icon"></a>
+        <div class="icon-wrapper">
+          <a href="https://github.com/jprymak/"
+            ><img class="contact__icon" src="../assets/img/github.svg"
+          /></a>
+
+          <img class="contact__icon" src="../assets/img/FB.svg" />
+          <img class="contact__icon" src="../assets/img/instagram.svg" />
+        </div>
+
         <a href="mailto:jprymak@gmail.com" class="email">jprymak@gmail.com</a>
       </section>
     </main>

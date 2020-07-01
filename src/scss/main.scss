@@ -1,4 +1,5 @@
 @import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 @import "_variables";
 @import "modules/about.scss";
@@ -7,26 +8,34 @@
 @import "modules/contact.scss";
 
 body {
-  background: $wtf;
-  color: #fff;
+  background: #FFFFFF;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: Nunito;
+  
 }
 
-
-
-
+.grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap:16px;
+  
+}
 
 .email{
-
+  margin-bottom: 88px;
+  padding: 4px 24px 4px 24px;
+  border-radius: 64px;
+  font-size: 20px;
+  font-family: Nunito;
+  color: #FFFFFF;
+  text-decoration: none;
+  background: $email;
 }
 
-
-
-
-
-
 .main {
+  // margin: 0 16px 0 16px;
 }
