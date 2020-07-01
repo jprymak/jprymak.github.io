@@ -4,13 +4,15 @@
     text-align: center;
     padding: 0 16px 0 16px;
     &__header {
-    
+    margin: 0;
     
     }
     &__paragraph{
     margin-bottom: 48px;
     }
     &__photo{
-        
+      margin-top: 98px;
+      margin-bottom: 40px;
+       border-radius: 50%; 
     }
   }
