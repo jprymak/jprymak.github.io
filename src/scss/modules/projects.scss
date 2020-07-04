@@ -3,7 +3,9 @@
   display:flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 88px;
     &__header{
+      margin-top: 48px;
       font-size: 36px;
     }
     &__paragraph{
@@ -24,7 +26,8 @@
     height: 320px;
     width: 100%;
     color: white;
-    font-size: 16px;;
+    font-size: 13px;
+    line-height: 24px;
     min-width:100%;
     background: url("../assets/img/github-small.svg") no-repeat 16px 64px,  #212528, ;
     border-radius: 16px;
@@ -37,8 +40,9 @@
     }
 
     &__info{
+      padding: 0 16px 48px 16px;
       display:grid;
-      grid-template-columns: 140px 1fr;
+      grid-template-columns: 100px 1fr;
       align-content: center;
       color: #808082;
     }

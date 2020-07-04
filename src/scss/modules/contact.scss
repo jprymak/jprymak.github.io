@@ -3,7 +3,9 @@
   display:flex;
   flex-direction: column;
   align-items:center;
+  background: #DBEAF7;
     &__header{
+      margin-top:64px;
       font-size: 36px;
     }
     &__paragraph{

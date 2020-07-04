@@ -1,4 +1,5 @@
 .skills{
+  
     padding: 0 16px 0 16px;
     background: #1070CA;
     color: #FFFFFF;
@@ -6,6 +7,8 @@
     flex-direction:column;
     margin-top:88px;
     &__header{
+      
+   margin:64px 0px 64px 0px;
     font-size: 36px;
     text-align: center;
     }
@@ -16,14 +19,15 @@
     flex-direction: column;
     align-items: center;
     &__icon{
-        
-        font-size: 64px;
+    margin-bottom: 24px;    
+    font-size: 64px;
     }
     &__header{
   font-size: 24px;
+  margin: 0 0 24px;
     }
     &__list{
-      
+    margin: 0 0 72px;  
     padding:0px;
     align-self: flex-start;
     list-style-position: inside;
