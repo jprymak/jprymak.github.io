@@ -1,16 +1,19 @@
 .projects{
-  padding: 0 16px 0 16px;
+  // width:100%;
+  padding: 0 16px 64px 16px;
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 64px;
+  
     &__header{
       margin-top: 48px;
       font-size: 36px;
+      text-align: center;
     }
     &__paragraph{
       text-align: center;
       margin-bottom: 46px;
+      text-align: center;
     }
     &__wrapper{
       display:flex;
@@ -25,11 +28,10 @@
   .project{
     font-family: 'Roboto Mono', monospace;
     min-height: 320px;
-    width: 100%;
+    width:100%;
     color: white;
     font-size: 13px;
     line-height: 24px;
-    min-width:100%;
     background: url("../assets/img/github-small.svg") no-repeat 16px 64px,  #212528, ;
     border-radius: 16px;
     margin-bottom: 24px;

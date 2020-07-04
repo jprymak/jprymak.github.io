@@ -7,6 +7,7 @@
 @import "modules/skills.scss";
 @import "modules/projects.scss";
 @import "modules/contact.scss";
+@import "modules/media.scss";
 
 
 body {
@@ -17,15 +18,12 @@ body {
   justify-content: center;
   min-height: 100vh;
   font-family: Nunito;
-  
 }
 
-.grid{
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap:16px;
-  
+.main{
+  width: 100%;
 }
+
 
 .email{
   margin-bottom: 88px;
@@ -38,6 +36,3 @@ body {
   background: $email;
 }
 
-.main {
-  // margin: 0 16px 0 16px;
-}
