@@ -12,7 +12,7 @@ fetch("https://api.github.com/users/jprymak/repos")
   .then((resp) => resp.json()) //odpowiedź zamieniamy na JSONa
   .then((resp) => {
     for (let repo of resp) {
-      const { name, description, html_url } = repo;
+      const { name, description, html_url, homepage } = repo;
 
       ///////// Creating project card /////////////
       const project = document.createElement("div");
@@ -30,7 +30,7 @@ fetch("https://api.github.com/users/jprymak/repos")
       const content = `
 <span class="grid-item-1">project:</span><p class="project-name">${name}</p>
 <span class="grid-item-2">description:</span><p class="project-description">${description}</p>
-<span class="grid-item-3">demo:</span><a  class="project-demo">&lt;<u class="link">see here</u>&gt;</a>
+<span class="grid-item-3">demo:</span><a href="${homepage}" class="project-demo">&lt;<u class="link">see here</u>&gt;</a>
 <span class="grid-item-4">github:</span><a href="${html_url}" class="project-github">&lt;<u class="link">source code</u>&gt;</a>
 
 `;
