@@ -3,13 +3,14 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 88px;
+  padding-bottom: 64px;
     &__header{
       margin-top: 48px;
       font-size: 36px;
     }
     &__paragraph{
       text-align: center;
+      margin-bottom: 46px;
     }
     &__wrapper{
       display:flex;
@@ -23,7 +24,7 @@
 
   .project{
     font-family: 'Roboto Mono', monospace;
-    height: 320px;
+    min-height: 320px;
     width: 100%;
     color: white;
     font-size: 13px;
@@ -31,6 +32,7 @@
     min-width:100%;
     background: url("../assets/img/github-small.svg") no-repeat 16px 64px,  #212528, ;
     border-radius: 16px;
+    margin-bottom: 24px;
     
     &__top{
       height: 40px;
