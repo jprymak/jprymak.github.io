@@ -1,4 +1,4 @@
-import '../scss/main.scss';
+import "../scss/main.scss";
 
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
@@ -6,35 +6,42 @@ import '../scss/main.scss';
 
 /* place your code below */
 
-fetch('https://api.github.com/users/jprymak/repos')
-.then(resp =>resp.json()) //odpowiedź zamieniamy na JSONa
-.then(resp =>{
-    for(let repo of resp){
-        const{name, description, html_url} = repo;
-        const projectsTemplate = document.querySelector(".projects__template--js");
+const projectsWrapper = document.querySelector(".projects__wrapper--js");
 
+fetch("https://api.github.com/users/jprymak/repos")
+  .then((resp) => resp.json()) //odpowiedź zamieniamy na JSONa
+  .then((resp) => {
+    for (let repo of resp) {
+      const { name, description, html_url } = repo;
 
-        const projectName = document.querySelector(".project-name");
-        const projectsDescription = document.querySelector(".project-description");
-        const projectsDemo = document.querySelector(".project-demo");
-        const projectsGithub = document.querySelector(".project-github");
+      ///////// Creating project card /////////////
+      const project = document.createElement("div");
+      project.setAttribute("class", "project");
 
-        
+      ///////// Creating card top bar /////////////
+      const projectTop = document.createElement("div");
+      projectTop.setAttribute("class", "project__top");
 
+      ///////// Creating card content /////////////
+      const projectInfo = document.createElement("div");
+      projectInfo.setAttribute("class", "project__info");
 
-        const projectCard = document.createElement("div");
-        projectCard.className = "project__info--js";
+      ///////// Creating content /////////////
+      const content = `
+<span class="grid-item-1">project:</span><p class="project-name">${name}</p>
+<span class="grid-item-2">description:</span><p class="project-description">${description}</p>
+<span class="grid-item-3">demo:</span><a href="${html_url}" class="project-demo">&lt;<u class="link">see here</u>&gt;</a>
+<span class="grid-item-4">github:</span><a class="project-github">&lt;<u class="link">source code</u>&gt;</a>
 
-        
-        
-        
-        // `<li>
-        // ${name} <a href = "${html_url}" title="link do repozytorium ${name}">link do githuba<a/>
-        // </li>
-        // `
-        projectsTemplate.innerHTML += projectCard;
+`;
+
+      project.appendChild(projectTop);
+      project.appendChild(projectInfo);
+      projectInfo.innerHTML += content;
+
+      projectsWrapper.appendChild(project);
     }
-}) 
-.catch(error =>{
-    console.log(error)
-})
+  })
+  .catch((error) => {
+    console.log(error);
+  });
