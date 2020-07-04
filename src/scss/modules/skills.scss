@@ -31,8 +31,6 @@
     padding:0px;
     align-self: flex-start;
     list-style-position: inside;
-    //list-style-image: url("../assets/img/small-tick.svg");
-    
     }
 
   }
@@ -40,7 +38,6 @@
   .skill{
     background: url("../assets/img/small-tick.svg") no-repeat left 8px; 
       padding: 3px 0px 3px 24px;
-      /* reset styles (optional): */
       list-style: none;
       margin: 0;
       &--white-tick{
