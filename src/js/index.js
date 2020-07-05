@@ -23,14 +23,27 @@ fetch("https://api.github.com/users/jprymak/repos")
       projectInfo.setAttribute("class", "project__info");
 
       ///////// Creating content /////////////
-      const content = `
-<span class="grid-item-1">project:</span><p class="project-name">${name}</p>
-<span class="grid-item-2">description:</span><p class="project-description">${description}</p>
-<span class="grid-item-3">demo:</span><a href="${homepage}" class="project-demo">&lt;<u class="link">see here</u>&gt;</a>
-<span class="grid-item-4">github:</span><a href="${html_url}" class="project-github">&lt;<u class="link">source code</u>&gt;</a>
 
-`;
+      const content="";
 
+      if(homepage){
+        content = `
+        <span class="grid-item-1">project:</span><p class="project-name">${name}</p>
+        <span class="grid-item-2">description:</span><p class="project-description">${description}</p>
+        <span class="grid-item-3">demo:</span><a href="${homepage}" target="blank" class="project-demo">&lt;<u class="link">see here</u>&gt;</a>
+        <span class="grid-item-4">github:</span><a href="${html_url}" target="blank" class="project-github">&lt;<u class="link">source code</u>&gt;</a>
+        `;
+        
+      }else{
+        content = `
+        <span class="grid-item-1">project:</span><p class="project-name">${name}</p>
+        <span class="grid-item-2">description:</span><p class="project-description">${description}</p>
+        <span class="grid-item-4">github:</span><a href="${html_url}" target="blank" class="project-github">&lt;<u class="link">source code</u>&gt;</a>
+        `;
+        
+
+      }
+   
       project.appendChild(projectTop);
       project.appendChild(projectInfo);
       projectInfo.innerHTML += content;
