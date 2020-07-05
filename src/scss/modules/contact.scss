@@ -1,32 +1,36 @@
-.contact{
+.contact {
   padding: 0px 16px 88px 16px;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-items:center;
-  background: #DBEAF7;
-    &__header{
-      text-align: center;
-      font-size: 36px;
-      margin: 64px 0 32px 0;
-    }
-    &__paragraph{
-      text-align: center;
-      margin:0;
-      margin-bottom: 56px;
-    }
-    &__icon{
-      background: #FFFFFF;
-      box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
-      padding: 12px;
-      height: 24px;
-      width: 24px;
-      border-radius: 50%;
-    }
+  align-items: center;
+  background: #dbeaf7;
+  &__header {
+    text-align: center;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 64px 0 32px 0;
   }
+  &__paragraph {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 56px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
+  }
+  &__icon {
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    padding: 12px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+  }
+}
 
-  .icon-wrapper{
-    width:192px;
-    margin-bottom:64px;
-    display:flex;
-    justify-content: space-around;
-  }
+.icon-wrapper {
+  width: 192px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-around;
+}
