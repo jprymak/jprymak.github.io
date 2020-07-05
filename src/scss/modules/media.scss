@@ -35,9 +35,11 @@
     .photo {
         width: 178px;
     }
-
-    .cloud-wrapper:hover {
-        opacity: 1;
+    .cloud-wrapper{
+        display:block;
+        &:hover{
+            opacity: 1;
+        }
     }
 
     ///////// skills section ///////////
