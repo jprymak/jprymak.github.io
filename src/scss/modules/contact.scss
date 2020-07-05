@@ -1,15 +1,17 @@
 .contact{
-  padding: 0 16px 88px 16px;
+  padding: 0px 16px 88px 16px;
   display:flex;
   flex-direction: column;
   align-items:center;
   background: #DBEAF7;
     &__header{
-      margin-top:64px;
+      text-align: center;
       font-size: 36px;
+      margin: 64px 0 32px 0;
     }
     &__paragraph{
       text-align: center;
+      margin:0;
       margin-bottom: 56px;
     }
     &__icon{
@@ -24,7 +26,7 @@
 
   .icon-wrapper{
     width:192px;
-    margin: 0px 43px 64px 43px;
+    margin-bottom:64px;
     display:flex;
     justify-content: space-around;
   }
