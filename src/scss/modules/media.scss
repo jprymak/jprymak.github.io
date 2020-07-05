@@ -1,4 +1,4 @@
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 960px) {
     ///////// skills section ///////////
     .skills {
         display: grid;
@@ -81,55 +81,82 @@
 
     ///////// about section ///////////
     .about {
-        padding: 0 128px 88px 128px;
+        padding: 0 128px 176px 128px;
         text-align: center;
-        
 
-        &__photo-wrapper{
-
+        &__photo-wrapper {
         }
         &__header {
             margin: 0;
-       
         }
         &__paragraph {
             margin-bottom: 48px;
         }
-
-              
     }
 
-    .text-wrapper{
-        display:flex;
-        &::before{
-            
+    .text-wrapper {
+        display: flex;
+        &::before {
             content: url("../assets/img/{.svg");
         }
-        &::after{
-            
+        &::after {
             content: url("../assets/img/}.svg");
-        } 
+        }
     }
 
-    .text-wrapper div{
+    .text-wrapper div {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding: 16px 0;
     }
 
-
     .photo {
-        
         width: 178px;
         margin-bottom: 40px;
         border-radius: 50%;
         border: 24px solid #f6f9fd;
     }
 
-    .cloud-wrapper{
+    .cloud-wrapper {
         display: block;
-        
     }
-    
+
+    ///////// contact section ///////////
+    .contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 128px 88px 128px;
+
+        &__header {
+            width:100%;
+            text-align: center;
+        }
+        &__paragraph {
+            width:100%;
+            text-align: center;
+        }
+        &__icon {
+            background: #ffffff;
+            box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+            padding: 12px;
+            height: 24px;
+            width: 24px;
+            border-radius: 50%;
+        }
+    }
+
+    .icon-wrapper {
+        margin: 0;
+        margin-right: 110px;
+        margin-left: auto;
+        width: 192px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact .email {
+        margin-right: auto;
+    }
     
 }
