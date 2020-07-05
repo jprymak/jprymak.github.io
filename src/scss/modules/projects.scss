@@ -1,18 +1,18 @@
 .projects{
   // width:100%;
-  padding: 0 16px 64px 16px;
+  padding: 0 16px 88px 16px;
   display:flex;
   flex-direction: column;
   align-items: center;
   
     &__header{
-      margin-top: 48px;
+      margin: 64px 0 32px;
       font-size: 36px;
       text-align: center;
     }
     &__paragraph{
       text-align: center;
-      margin-bottom: 46px;
+      margin: 0 0 46px;
       text-align: center;
     }
     &__wrapper{
@@ -28,7 +28,7 @@
   .project{
     font-family: 'Roboto Mono', monospace;
     min-height: 320px;
-    width:100%;
+    min-width:287px;
     color: white;
     font-size: 13px;
     line-height: 24px;
@@ -51,6 +51,9 @@
       align-content: center;
       color: #808082;
     }
+    &:last-of-type{
+      margin:0px;
+  }
     
   }
 
