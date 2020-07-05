@@ -1,15 +1,15 @@
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 640px) {
     ///////// skills section ///////////
-    .skills{
+    .skills {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 24px;
         padding: 0 128px 176px 128px;
-        
-        &__header{
+
+        &__header {
             grid-column: 3/11;
             grid-row: 1/2;
-            margin:64px 0px 128px 0px;
+            margin: 64px 0px 128px 0px;
         }
     }
 
@@ -28,64 +28,109 @@
 
     ///////// projects section ///////////
 
-    .projects{
+    .projects {
         // width:100%;
-        display:grid;
+        display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 24px;
-        
-          &__header{
+        padding: 0 128px;
+        &__header {
             grid-column: 3/11;
             grid-row: 1/2;
-          }
-          &__paragraph{
+        }
+        &__paragraph {
             grid-column: 3/11;
             grid-row: 2/3;
-          }
-          &__wrapper{
+        }
+        &__wrapper {
             grid-column: 1/13;
             grid-row: 3/4;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             column-gap: 24px;
-            &--js{
-              
+            &--js {
             }
-          }
+        }
+    }
+
+    .project {
+        font-family: "Roboto Mono", monospace;
+        min-height: 320px;
+        color: white;
+        font-size: 13px;
+        line-height: 24px;
+        background: url("../assets/img/github-small.svg") no-repeat 16px 64px, #212528;
+        border-radius: 16px;
+        margin-bottom: 24px;
+
+        &__top {
+            height: 40px;
+            background: url("../assets/img/circles_top.svg") no-repeat 16px 16px, #1e1e1e;
+            border-radius: 16px;
+            margin-bottom: 72px;
         }
 
-        .project{
-            
-            font-family: 'Roboto Mono', monospace;
-            min-height: 320px;
-            max-width: 100%;
-            color: white;
-            font-size: 13px;
-            line-height: 24px;
-            background: url("../assets/img/github-small.svg") no-repeat 16px 64px,  #212528, ;
-            border-radius: 16px;
-            margin-bottom: 24px;
-            
-            &__top{
-              height: 40px;
-              background:  url("../assets/img/circles_top.svg") no-repeat 16px 16px, #1E1E1E;
-              border-radius: 16px;
-              margin-bottom: 72px;
-            }
+        &__info {
+            padding: 0 16px 48px 16px;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            align-content: center;
+            color: #808082;
+        }
+    }
+
+    ///////// about section ///////////
+    .about {
+        margin-top: 98px;
+        padding: 0 128px;
+        text-align: center;
         
-            &__info{
+
+        &__photo-wrapper{
+
+        }
+        &__header {
+            margin: 0;
+       
+        }
+        &__paragraph {
+            margin-bottom: 48px;
+        }
+
               
-              padding: 0 16px 48px 16px;
-              display:grid;
-              grid-template-columns: 100px 1fr;
-              align-content: center;
-              color: #808082;
-            }
+    }
+
+    .text-wrapper{
+        display:flex;
+        &::before{
             
-          }
+            content: url("../assets/img/{.svg");
+        }
+        &::after{
+            
+            content: url("../assets/img/}.svg");
+        } 
+    }
+
+    .text-wrapper div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
 
+    .photo {
+        
+        width: 178px;
+        margin-bottom: 40px;
+        border-radius: 50%;
+        border: 24px solid #f6f9fd;
+    }
 
-
-
+    .cloud-wrapper{
+        display: block;
+        
+    }
+    
+    
 }
