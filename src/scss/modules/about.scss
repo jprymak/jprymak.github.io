@@ -29,16 +29,19 @@ line-height: 32px;
   border-radius: 50%;
   border: 16px solid #f6f9fd;
 }
+
+
 .cloud-wrapper {
   text-align: left;
   position: absolute;
   min-height: 96px;
   width: 240px;;
-  bottom: 200px;
-  left: 200px;
-  display: none;
+  bottom: 180px;
+  left: 180px;
   background: url("../assets/img/speech_cloud.svg") no-repeat 30px 70px;
-
+  display:block;
+  opacity:0;
+  
 }
 
 .cloud{
