@@ -1,15 +1,17 @@
 .skills {
-  padding: 0 16px 0 16px;
+  padding: 64px 16px 88px;
   background: #1070ca;
   color: #ffffff;
   display: flex;
   flex-direction: column;
   &__header {
-    margin: 64px 0px 64px 0px;
+    margin:0 0 64px 0;
+    font-weight: bold;
     font-size: 36px;
     line-height: 48px;
     text-align: center;
   }
+  
 }
 
 .skill-group {
@@ -18,9 +20,11 @@
   align-items: center;
   margin: 0 0 72px;
   font-weight: 600;
-  &__icon {
+  &__emoji {
+    display:block;
     margin-bottom: 16px;
     font-size: 64px;
+    line-height: 72px;
   }
   &__header {
     font-size: 24px;
@@ -28,22 +32,29 @@
     text-align: center;
   }
   &__list {
-    color: #DBEAF7;
-    margin: 0;
+    color: $lighterBlue;
+    margin: 0 auto;
     align-self: flex-start;
-    list-style-position: inside;
+    list-style-type: none;
+    width:288px;
+    padding:0;
+  }
+  &:last-of-type{
+    margin:0;
   }
 }
 
 .skill {
   background: url("../assets/img/small-tick.svg") no-repeat left 8px;
   padding: 3px 0px 3px 24px;
-  list-style: none;
-  margin: 0;
+  margin: 0 0 16px;
   &--white-tick {
     background: url("../assets/img/small-tick-white.svg") no-repeat left 8px;
   }
   &--bullet {
     background: url("../assets/img/bullet.svg") no-repeat 4px 11px;
+  }
+  &:last-of-type{
+    margin:0;
   }
 }
