@@ -9,20 +9,26 @@
 @import "modules/contact.scss";
 @import "modules/media.scss";
 
+html{
+  box-sizing:border-box;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing:inherit;
+}
+
 
 body {
-  background: #FFFFFF;
-  color: black;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: $textDefault;
   min-height: 100vh;
   font-family: Nunito;
 }
 
-.main{
-  width: 100%;
-}
+// .main{
+//   width: 100%;
+// }
 
 
 .email{
