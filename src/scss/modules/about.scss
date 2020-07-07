@@ -3,14 +3,26 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 16px 88px 16px;
+  padding: 0 16px 88px;
+  @media (min-width: $tablet) {
+    padding: 0 80px 88px;
+  }
+  @media (min-width: $desktop) {
+    padding: 0 128px 176px 128px;
+  }
+
   &__header {
     margin: 0;
     font-weight: bold;
     font-size: 26px;
     line-height: 32px;
+    @media (min-width: $desktop) {
+      margin-bottom: 24px;
+      font-size: 32px;
+      line-height: 40px;
+    }
   }
-  &__link{
+  &__link {
     text-decoration: none;
     color: $lightBlue;
     font-weight: bold;
@@ -20,6 +32,11 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
+    @media (min-width: $desktop) {
+      margin: 0px;
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__photo-container {
     position: relative;
@@ -33,6 +50,10 @@
     margin-bottom: 0px;
     border-radius: 50%;
     border: 16px solid #f6f9fd;
+    @media (min-width: $desktop) {
+      width: 178px;
+      height: 178px;
+    }
   }
 
   &__special {
@@ -40,19 +61,43 @@
   }
 }
 
+.text-wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+    &::before {
+      content: url("../assets/img/{.svg");
+    }
+    &::after {
+      content: url("../assets/img/}.svg");
+    }
+  }
+  & div {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+}
+}
+
 .cloud-wrapper {
   text-align: left;
   position: absolute;
   min-height: 96px;
   width: 240px;
-  bottom: 180px;
+  bottom: 154px;
   left: 180px;
-  background: url("../assets/img/speech_cloud.svg") no-repeat 30px 70px;
   display: none;
   opacity: 0;
+  @media (min-width: $desktop) {
+    display: block;
+    &:hover {
+        opacity: 1;
+    }
+  }
+
 }
 
 .cloud {
+  position: relative;
   display: inline-block;
   font-style: normal;
   font-weight: bold;
@@ -61,4 +106,14 @@
   background: #1070ca;
   border-radius: 16px;
   padding: 16px 19px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 32px;
+    display: block;
+    width: 17.42px;
+    height: 22.66px;
+    background: url("../assets/img/speech_cloud.svg");
+  }
 }

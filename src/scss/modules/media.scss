@@ -1,47 +1,5 @@
 @media screen and (min-width: 960px) {
-    ///////// about section ///////////
-    .about {
-        padding: 0 128px 176px 128px;
-
-        &__header {
-            margin-bottom: 24px;
-            font-size: 32px;
-            line-height: 40px;
-        }
-        &__paragraph {
-            margin: 0px;
-            font-size: 20px;
-            line-height: 40px;
-        }
-        &__photo {
-            width: 178px;
-            height: 178px;
-        }
-    }
-
-    .text-wrapper {
-        display: flex;
-        &::before {
-            content: url("../assets/img/{.svg");
-        }
-        &::after {
-            content: url("../assets/img/}.svg");
-        }
-    }
-
-    .text-wrapper div {
-        display: flex;
-        flex-direction: column;
-        padding: 16px 0;
-    }
-
-    .cloud-wrapper {
-        display: block;
-        &:hover {
-            opacity: 1;
-        }
-    }
-
+   
     ///////// skills section ///////////
     .skills {
         display: grid;
@@ -82,6 +40,7 @@
     ///////// projects section ///////////
 
     .projects {
+        
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         column-gap: 24px;

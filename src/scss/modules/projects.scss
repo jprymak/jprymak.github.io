@@ -19,6 +19,11 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+    }
   }
 }
 
@@ -29,8 +34,7 @@
   min-width: 287px;
   font-size: 13px;
   line-height: 24px;
-  background: url("../assets/img/github-small.svg") no-repeat 16px 64px,
-    $darkGray;
+  background: url("../assets/img/github-small.svg") no-repeat 16px 64px, $darkGray;
   border-radius: 16px;
   margin-bottom: 24px;
   overflow: hidden;
@@ -40,8 +44,7 @@
 
   &__top {
     height: 40px;
-    background: url("../assets/img/circles_top.svg") no-repeat 16px 16px,
-      $darkerGray;
+    background: url("../assets/img/circles_top.svg") no-repeat 16px 16px, $darkerGray;
     margin-bottom: 72px;
   }
 
