@@ -1,12 +1,25 @@
 .projects {
   padding: 64px 16px 88px;
 
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    padding: 0 128px 176px 128px;
+  }
   &__paragraph {
     text-align: center;
     margin: 0 0 46px;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
+    @media (min-width: $tablet) {
+      grid-column: 3/11;
+      grid-row: 2/3;
+      margin-bottom: 128px;
+      font-size: 20px;
+      line-height: 40px;
+    }
   }
   &__header {
     margin: 0 0 32px;
@@ -14,12 +27,26 @@
     text-align: center;
     line-height: 48px;
     color: $textDark;
+    @media (min-width: $tablet) {
+      grid-column: 3/11;
+      grid-row: 1/2;
+      margin: 80px 0 40px;
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
   &__container {
     display: flex;
     flex-direction: column;
     width: 100%;
     @media (min-width: $tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 24px;
+    }
+    @media (min-width: $desktop) {
+      grid-column: 1/13;
+      grid-row: 3/4;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 24px;
@@ -38,6 +65,12 @@
   border-radius: 16px;
   margin-bottom: 24px;
   overflow: hidden;
+  @media (min-width: $desktop) {
+    font-size: 16px;
+        line-height: 24px;
+        background: url("../assets/img/github-small.svg") no-repeat 48px 58px, $darkGray;
+  }
+
   &:last-of-type {
     margin: 0px;
   }
@@ -46,6 +79,9 @@
     height: 40px;
     background: url("../assets/img/circles_top.svg") no-repeat 16px 16px, $darkerGray;
     margin-bottom: 72px;
+    @media (min-width: $desktop) {
+      margin-bottom: 66px;
+    }
   }
 
   &__content {
@@ -53,6 +89,10 @@
     display: grid;
     grid-template-columns: 100px 1fr;
     color: $lightGray;
+    @media (min-width: $desktop) {
+      padding: 0 32px 48px 32px;
+            grid-template-columns: 120px 1fr;
+    }
 
     & > p {
       margin-top: 0px;

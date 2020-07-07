@@ -1,51 +1,5 @@
 @media screen and (min-width: 960px) {
    
-    ///////// projects section ///////////
-
-    .projects {
-        
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        column-gap: 24px;
-        padding: 0 128px 176px 128px;
-
-        &__container {
-            grid-column: 1/13;
-            grid-row: 3/4;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 24px;
-        }
-        &__header {
-            grid-column: 3/11;
-            grid-row: 1/2;
-            margin: 80px 0 40px;
-            font-size: 48px;
-            line-height: 56px;
-        }
-        &__paragraph {
-            grid-column: 3/11;
-            grid-row: 2/3;
-            margin-bottom: 128px;
-            font-size: 20px;
-            line-height: 40px;
-        }
-    }
-
-    .project {
-        font-size: 16px;
-        line-height: 24px;
-        background: url("../assets/img/github-small.svg") no-repeat 48px 58px, #212528;
-        &__top {
-            margin-bottom: 66px;
-        }
-
-        &__content {
-            padding: 0 32px 48px 32px;
-            grid-template-columns: 120px 1fr;
-        }
-    }
-
     ///////// contact section ///////////
     .contact {
         padding: 0 128px 176px 128px;
