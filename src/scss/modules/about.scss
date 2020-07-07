@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: column;
     padding: 16px 0;
-}
+  }
 }
 
 .cloud-wrapper {
@@ -90,10 +90,9 @@
   @media (min-width: $desktop) {
     display: block;
     &:hover {
-        opacity: 1;
+      opacity: 1;
     }
   }
-
 }
 
 .cloud {

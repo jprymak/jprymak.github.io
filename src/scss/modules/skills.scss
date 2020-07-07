@@ -4,14 +4,27 @@
   color: #ffffff;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 24px;
+    padding: 0 128px 176px 128px;
+  }
+
   &__header {
-    margin:0 0 64px 0;
+    margin: 0 0 64px 0;
     font-weight: bold;
     font-size: 36px;
     line-height: 48px;
     text-align: center;
+    @media (min-width: $desktop) {
+      grid-column: 3/11;
+      margin: 64px 0px 128px 0px;
+      font-size: 48px;
+      line-height: 56px;
+    }
   }
-  
 }
 
 .skill-group {
@@ -20,8 +33,23 @@
   align-items: center;
   margin: 0 0 72px;
   font-weight: 600;
+  @media (min-width: $desktop) {
+    &:nth-of-type(1) {
+      grid-column: 1/5;
+      margin: 0;
+    }
+    &:nth-of-type(2) {
+      grid-column: 5/9;
+      margin: 0;
+    }
+    &:nth-of-type(3) {
+      grid-column: 9/13;
+      margin: 0;
+    }
+  }
+
   &__emoji {
-    display:block;
+    display: block;
     margin-bottom: 16px;
     font-size: 64px;
     line-height: 72px;
@@ -36,11 +64,11 @@
     margin: 0 auto;
     align-self: flex-start;
     list-style-type: none;
-    width:288px;
-    padding:0;
+    width: 288px;
+    padding: 0;
   }
-  &:last-of-type{
-    margin:0;
+  &:last-of-type {
+    margin: 0;
   }
 }
 
@@ -54,7 +82,7 @@
   &--bullet {
     background: url("../assets/img/bullet.svg") no-repeat 4px 11px;
   }
-  &:last-of-type{
-    margin:0;
+  &:last-of-type {
+    margin: 0;
   }
 }
