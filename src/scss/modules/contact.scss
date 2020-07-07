@@ -1,24 +1,35 @@
 .contact {
-  padding: 0px 16px 88px 16px;
+  padding: 80px 16px 88px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #dbeaf7;
+  background: $lighterBlue;
   &__header {
+    color: $textDark;
     text-align: center;
     font-size: 36px;
     line-height: 48px;
-    margin: 64px 0 32px 0;
+    margin: 0 0 32px;
   }
+
   &__paragraph {
     text-align: center;
-    margin: 0;
-    margin-bottom: 56px;
+    margin: 0 0 56px;
     font-weight: 300;
     font-size: 16px;
     line-height: 32px;
   }
-  &__icon {
+  
+}
+
+.socials{
+  width: 192px;
+  margin-bottom: 64px;
+  display: flex;
+  justify-content: space-around;
+
+  &__link {
+    box-sizing: content-box;
     background: #ffffff;
     box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
     padding: 12px;
@@ -28,9 +39,4 @@
   }
 }
 
-.icon-wrapper {
-  width: 192px;
-  margin-bottom: 64px;
-  display: flex;
-  justify-content: space-around;
-}
+
