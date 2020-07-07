@@ -1,128 +1,116 @@
-.projects{
-  // width:100%;
-  padding: 0 16px 88px 16px;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  
-    &__header{
-      margin: 64px 0 32px;
-      font-size: 36px;
-      text-align: center;
-    }
-    &__paragraph{
-      text-align: center;
-      margin: 0 0 46px;
-      text-align: center;
-      font-weight: 300;
-font-size: 16px;
-line-height: 32px;
-    }
-    &__wrapper{
-      display:flex;
-      flex-direction: column;
-      width:100%;
-      &--js{
-        
-      }
-    }
+.projects {
+  padding: 64px 16px 88px;
+
+  &__paragraph {
+    text-align: center;
+    margin: 0 0 46px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 32px;
   }
-
-  .project{
-    font-family: 'Roboto Mono', monospace;
-    min-height: 320px;
-    min-width:287px;
-    color: white;
-    font-size: 13px;
-    line-height: 24px;
-    background: url("../assets/img/github-small.svg") no-repeat 16px 64px,  #212528, ;
-    border-radius: 16px;
-    margin-bottom: 24px;
-    
-    &__top{
-      height: 40px;
-      background:  url("../assets/img/circles_top.svg") no-repeat 16px 16px, #1E1E1E;
-      border-radius: 16px;
-      margin-bottom: 72px;
-    }
-
-    &__info{
-      
-      padding: 0 16px 48px 16px;
-      display:grid;
-      grid-template-columns: 100px 1fr;
-      align-content: center;
-      color: #808082;
-    }
-    &:last-of-type{
-      margin:0px;
+  &__header {
+    margin: 0 0 32px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 48px;
+    color: $textDark;
   }
-    
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
-
-
-  .project__info>p{
-    margin-top:0px;
-    padding-left:4px;
-  }
-
-  .project__info>a{
-    margin-top:0px;
-    padding-left:4px;
-  }
-
-  .project__info>span{
-    text-align: right;
-  }
-
-  .project-name{
-    color: #FFFFFF;
-    grid-row:1/2;
-    grid-column: 2/3;
-  }
-
-  .project-description{
-    color: #A3A3A3;
-    grid-row:2/3;
-    grid-column: 2/3;
-    margin-bottom:24px;
-  }
-
-.link{
-  color: #14B5D0;
-
 }
 
-  .project-demo{
+.project {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  font-family: "Roboto Mono", monospace;
+  min-height: 320px;
+  min-width: 287px;
+  font-size: 13px;
+  line-height: 24px;
+  background: url("../assets/img/github-small.svg") no-repeat 16px 64px,
+    $darkGray;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  &:last-of-type {
+    margin: 0px;
+  }
+
+  &__top {
+    height: 40px;
+    background: url("../assets/img/circles_top.svg") no-repeat 16px 16px,
+      $darkerGray;
+    margin-bottom: 72px;
+  }
+
+  &__content {
+    padding: 0 16px 48px 16px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    color: $lightGray;
+
+    & > p {
+      margin-top: 0px;
+      padding-left: 4px;
+    }
+
+    & > a {
+      margin-top: 0px;
+      padding-left: 4px;
+    }
+  }
+
+  &__demo {
     text-decoration: none;
-    grid-row:3/4;
+    grid-row: 3/4;
     grid-column: 2/3;
-    margin-bottom:8px;
+    margin-bottom: 8px;
     color: #808082;
   }
 
-  .project-github{
+  &__description {
+    color: $lighterGray;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-bottom: 24px;
+  }
+
+  &__github {
     text-decoration: none;
-    grid-row:5/6;
+    grid-row: 5/6;
     grid-column: 2/3;
     color: #808082;
   }
 
-  .grid-item{
-      &-1{
-        grid-row:1/2;
-        grid-column: 1/2;
-      }
-      &-2{
-        grid-row:2/3;
-    grid-column: 1/2;
-      }
-      &-3{
-        grid-row:3/4;
-        grid-column: 1/2;
-      }
-      &-4{
-        grid-row:5/6;
-    grid-column: 1/2;
-      }
+  &__label {
+    text-align: right;
+
+    &:nth-of-type(1) {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+    &:nth-of-type(2) {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+    &:nth-of-type(3) {
+      grid-row: 3/4;
+      grid-column: 1/2;
+    }
+    &:nth-of-type(4) {
+      grid-row: 5/6;
+      grid-column: 1/2;
+    }
   }
+  &__link {
+    color: #14b5d0;
+  }
+
+  &__name {
+    color: #ffffff;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+}

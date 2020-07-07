@@ -1,5 +1,4 @@
 @media screen and (min-width: 960px) {
-
     ///////// about section ///////////
     .about {
         padding: 0 128px 176px 128px;
@@ -16,7 +15,7 @@
         }
         &__photo {
             width: 178px;
-            height:178px;
+            height: 178px;
         }
     }
 
@@ -36,10 +35,9 @@
         padding: 16px 0;
     }
 
-    
-    .cloud-wrapper{
-        display:block;
-        &:hover{
+    .cloud-wrapper {
+        display: block;
+        &:hover {
             opacity: 1;
         }
     }
@@ -88,6 +86,14 @@
         grid-template-columns: repeat(12, 1fr);
         column-gap: 24px;
         padding: 0 128px 176px 128px;
+
+        &__container {
+            grid-column: 1/13;
+            grid-row: 3/4;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 24px;
+        }
         &__header {
             grid-column: 3/11;
             grid-row: 1/2;
@@ -102,26 +108,17 @@
             font-size: 20px;
             line-height: 40px;
         }
-        &__wrapper {
-            grid-column: 1/13;
-            grid-row: 3/4;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            column-gap: 24px;
-            &--js {
-            }
-        }
     }
 
     .project {
         font-size: 16px;
         line-height: 24px;
-        background: url("../assets/img/github-small.svg") no-repeat 48px 58px,  #212528, ;
+        background: url("../assets/img/github-small.svg") no-repeat 48px 58px, #212528;
         &__top {
             margin-bottom: 66px;
         }
 
-        &__info {
+        &__content {
             padding: 0 32px 48px 32px;
             grid-template-columns: 120px 1fr;
         }
