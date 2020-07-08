@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://jprymak.github.io/og.png)
 
 # JAKUB PRYMAK - JUNIOR FRONTEND DEVELOPER
 
