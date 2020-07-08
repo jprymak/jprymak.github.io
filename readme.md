@@ -1,12 +1,19 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# JAKUB PRYMAK - JUNIOR FRONTEND DEVELOPER
 
-Simple toolkit for your static websites development.
+Welcome to my portfolio website. Please have a look at my recent projects. 
 
-## How to use it?
+Here you can also find out about what skills i have, what am I fairly good at and my further goals.
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+## TOOLS
+
+- WTF Webpack starterkit
+- HTML + CSS + JS
+- Github API
+- CSS Grid
+- Flexbox
+- BEM
 
 ## Available scripts
 
