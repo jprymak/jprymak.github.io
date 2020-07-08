@@ -2,6 +2,8 @@ import "../scss/main.scss";
 
 /* place your code below */
 
+console.log('Hello! I\'m Jakub. I\'m really glad you are here')
+
 const projectsContainer = document.querySelector(".projects__container--js");
 
 fetch("https://api.github.com/users/jprymak/repos")
