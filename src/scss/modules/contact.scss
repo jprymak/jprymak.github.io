@@ -38,7 +38,10 @@
     }
   }
   & .email {
-    margin-right: auto;
+    @media (min-width: $desktop) {
+      margin-right: auto;
+    }
+    
   }
 }
 
