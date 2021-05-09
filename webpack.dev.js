@@ -42,6 +42,6 @@ module.exports = merge(common, {
 
   devServer: {
     port: 8080,
-    host: '192.168.1.3'
+    host: 'localhost'
   },
 });
